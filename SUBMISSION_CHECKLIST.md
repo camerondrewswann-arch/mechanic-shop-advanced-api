@@ -1,0 +1,22 @@
+# Advanced API Submission Checklist
+
+- [ ] Extract the ZIP before opening or uploading the project.
+- [ ] Do not copy files individually through GitHub's browser.
+- [ ] Confirm `app/`, `app/blueprints/`, `tests/`, and `postman/` remain folders.
+- [ ] Create and activate a new virtual environment.
+- [ ] Run `py -m pip install -r requirements.txt`.
+- [ ] Run `py seed.py`.
+- [ ] Run `py run.py` and verify `/health` returns `{"status":"healthy"}`.
+- [ ] Stop the server and run `py -m pytest -q`.
+- [ ] Confirm all six tests pass.
+- [ ] Import the included Postman collection.
+- [ ] Demonstrate customer login and `/customers/my-tickets`.
+- [ ] Demonstrate mechanic login and protected inventory CRUD.
+- [ ] Demonstrate ticket mechanic editing and adding an inventory part.
+- [ ] Demonstrate `/mechanics/ranked`.
+- [ ] Demonstrate customer pagination.
+- [ ] Confirm `.env`, local databases, virtual environments, and cache files are not committed.
+- [ ] Push the entire extracted folder using Git or GitHub Desktop.
+- [ ] Copy the GitHub repository URL into the Disco submission field.
+- [ ] Record a video under five minutes with your camera visible.
+- [ ] Upload the video directly to Disco, not Google Drive or another external link.
